@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Detail from "./pages/Detail";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
+import { ListTask } from "./pages/ListTask";
 import Header from "./partials/Header";
 
 
@@ -28,6 +29,7 @@ function App() {
       <Routes maxLoadingTime={500}>
         <Route path="/" element={<Home />} loading />
         <Route path="/add-task" element={<AddTask />} loading />
+        <Route path="/list-task" element={<ListTask />} loading />
         <Route path="/contact-us" element={<Contact />} loading />
         <Route path="/appartements" element={<Appartements />} loading />
         <Route path="/detail/:id" element={<Detail />} loading />
